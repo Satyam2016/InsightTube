@@ -1,0 +1,26 @@
+# FastAPI Framework
+fastapi
+uvicorn[standard]
+
+# YouTube Video Data and Comments
+google-api-python-client
+youtube-transcript-api
+
+# NLP Libraries
+transformers
+torch
+nltk
+scikit-learn
+textblob
+
+# Pydantic for Schemas
+pydantic
+
+# Requests for external API calls
+requests
+
+# BeautifulSoup for cleaning HTML in comments (optional)
+beautifulsoup4
+
+# For async support if needed
+aiohttp
