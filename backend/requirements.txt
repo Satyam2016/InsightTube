@@ -24,3 +24,14 @@ beautifulsoup4
 
 # For async support if needed
 aiohttp
+
+keybert
+transformers
+torch
+scikit-learn
+sentence-transformers
+
+
+sumy
+isodate
+openai

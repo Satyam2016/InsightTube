@@ -1,6 +1,6 @@
 
 from fastapi import FastAPI
-from routers import analyze
+from routers import analyze, dashboard
 
 app = FastAPI(
     title="YouTube Video Analyzer",
@@ -8,7 +8,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(analyze.router)
+app.include_router(analyze.router, prefix="/api")
+app.include_router(dashboard.router, prefix="/api")
 
 @app.get("/")
 def root():

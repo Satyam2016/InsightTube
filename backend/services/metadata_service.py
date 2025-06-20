@@ -1,32 +1,34 @@
-# youtube-analyzer-backend/services/metadata_service.py
-
 from googleapiclient.discovery import build
 import os
 from dotenv import load_dotenv
 load_dotenv()
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")  # Set this in your .env or environment
-youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
+# Replace with your actual YouTube Data API key
+API_KEY =  os.getenv("YOUTUBE_API_KEY")
 
-def fetch_metadata(video_id: str) -> dict:
-    response = youtube.videos().list(
+def get_video_metadata(video_id: str) -> dict:
+    youtube = build("youtube", "v3", developerKey=API_KEY)
+    request = youtube.videos().list(
         part="snippet,statistics,contentDetails",
         id=video_id
-    ).execute()
+    )
+    response = request.execute()
 
     if not response["items"]:
-        raise ValueError("Video not found.")
+        return {}
 
     item = response["items"][0]
     snippet = item["snippet"]
     stats = item["statistics"]
+    content = item["contentDetails"]
 
     return {
-        "title": snippet["title"],
-        "channel": snippet["channelTitle"],
-        "description": snippet["description"],
-        "published_at": snippet["publishedAt"],
-        "views": stats.get("viewCount", "0"),
-        "likes": stats.get("likeCount", "0"),
-        "comments": stats.get("commentCount", "0"),
+        "title": snippet.get("title"),
+        "description": snippet.get("description"),
+        "channel_title": snippet.get("channelTitle"),
+        "published_at": snippet.get("publishedAt"),
+        "duration": content.get("duration"),
+        "view_count": stats.get("viewCount"),
+        "like_count": stats.get("likeCount"),
+        "comment_count": stats.get("commentCount"),
         "tags": snippet.get("tags", [])
     }
