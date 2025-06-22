@@ -1,37 +1,26 @@
-# FastAPI Framework
-fastapi
-uvicorn[standard]
+# FastAPI and server dependencies
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
 
-# YouTube Video Data and Comments
-google-api-python-client
-youtube-transcript-api
+# Google APIs
+google-generativeai==0.3.2
+google-api-python-client==2.108.0
+google-auth==2.25.2
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.2.0
 
-# NLP Libraries
-transformers
-torch
-nltk
-scikit-learn
-textblob
+# YouTube and video processing
+youtube-transcript-api==0.6.1
 
-# Pydantic for Schemas
-pydantic
+# Natural Language Processing
+nltk==3.8.1
+textblob==0.17.1
 
-# Requests for external API calls
-requests
+# HTTP client
+httpx==0.25.2
 
-# BeautifulSoup for cleaning HTML in comments (optional)
-beautifulsoup4
-
-# For async support if needed
-aiohttp
-
-keybert
-transformers
-torch
-scikit-learn
-sentence-transformers
-
-
-sumy
-isodate
-openai
+# Development dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1

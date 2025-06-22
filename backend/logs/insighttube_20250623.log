@@ -1,0 +1,11 @@
+2025-06-23 00:04:22,624 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 00:06:28,556 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 00:06:41,264 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 00:08:13,427 - core.logger - WARNING - Could not fetch transcript for video uwLWf0rEL18
+2025-06-23 00:08:15,158 - core.logger - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-23 00:08:15,463 - core.logger - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-23 00:14:33,219 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 00:16:17,440 - core.logger - WARNING - Could not fetch transcript for video uwLWf0rEL18
+2025-06-23 00:18:38,269 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 00:18:39,707 - core.logger - WARNING - Could not fetch transcript for video uwLWf0rEL18
+2025-06-23 00:23:18,021 - core.logger - WARNING - Could not fetch transcript for video -UQ6OZywZ2I
