@@ -31,7 +31,7 @@ class GeminiService:
         and summarizing the entire video and providing the important summary in points
         within 250 words. Please provide the summary of the text given here:
 
-        {content}
+        {transcript}
         """
         
         return await self.analyze_with_gemini(prompt)
