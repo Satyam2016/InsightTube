@@ -39,3 +39,5 @@
 2025-06-23 04:24:04,022 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-06-23 04:26:06,875 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-06-23 04:29:12,145 - core.logger - WARNING - Could not fetch transcript for video -Fe0zk-F4OA
+2025-06-23 17:01:53,877 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-23 17:02:06,196 - core.logger - WARNING - Could not fetch transcript for video -Fe0zk-F4OA
